@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="556.0" style="-fx-background-color: Gray;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wit.comp1050.mastermind.HelloController">
+   <children>
+      <HBox id="Computer_Code" alignment="CENTER" layoutX="111.0" layoutY="14.0" prefHeight="76.0" prefWidth="294.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 20; -fx-spacing: 10;">
+         <children>
+            <Circle fx:id="computerCode1" fill="TRANSPARENT" radius="23.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="3.0" />
+            <Circle fx:id="computerCode2" fill="TRANSPARENT" layoutX="157.0" layoutY="48.0" radius="23.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="3.0" />
+            <Circle fx:id="computerCode3" fill="TRANSPARENT" layoutX="193.0" layoutY="48.0" radius="23.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="3.0" />
+            <Circle fx:id="computerCode4" fill="TRANSPARENT" layoutX="229.0" layoutY="48.0" radius="23.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="3.0" />
+         </children>
+      </HBox>
+      <BorderPane layoutX="18.0" layoutY="116.0" prefHeight="487.0" prefWidth="520.0">
+         <center>
+            <VBox id="myVBox" fx:id="rowVBox" prefHeight="474.0" prefWidth="362.0" style="-fx-border-color: BLACK; -fx-border-width: 2; -fx-border-radius: 25; -fx-padding: 20;" BorderPane.alignment="CENTER" />
+         </center>
+         <right>
+            <VBox fx:id="rightVbox" alignment="BOTTOM_CENTER" prefHeight="527.0" prefWidth="158.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 25;" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="88.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Circle fx:id="blueCircle" fill="DODGERBLUE" layoutX="56.0" layoutY="51.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Circle fx:id="greenCircle" fill="#149400" layoutX="128.0" layoutY="51.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Circle fx:id="redCircle" fill="#ff1f1f" layoutX="198.0" layoutY="51.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Circle fx:id="yellowCircle" fill="#f4ff1f" layoutX="264.0" layoutY="51.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Circle fx:id="purpleCircle" fill="#a317a8" layoutX="335.0" layoutY="51.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Rectangle fx:id="currentColorDisplay" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="388.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="61.0" />
+                  <Button fx:id="checkButton" layoutX="468.0" layoutY="32.0" mnemonicParsing="false" text="Check!" />
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+      <Button fx:id="restartButton" layoutX="481.0" layoutY="71.0" mnemonicParsing="false" text="Restart" />
+   </children>
+</Pane>
